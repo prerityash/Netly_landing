@@ -65,12 +65,17 @@ body {
   padding: 1.5rem 3.5rem;
   width: 90%;
   max-width: 800px;
-  background: var(--nav-bg);
-  backdrop-filter: blur(24px);
-  -webkit-backdrop-filter: blur(24px);
-  border: 1px solid var(--panel-border);
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(30px) saturate(150%);
+  -webkit-backdrop-filter: blur(30px) saturate(150%);
+  border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 9999px;
-  box-shadow: 0 15px 40px -10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+.light-theme .navbar {
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
 }
 
 .nav-logo {
@@ -151,6 +156,20 @@ body {
   font-weight: 500;
 }
 
+.download-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.latest-version-text {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
 .download-btn {
   background: linear-gradient(135deg, var(--accent-blue) 0%, #2563EB 100%);
   color: white;
@@ -166,7 +185,6 @@ body {
   gap: 0.75rem;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.5);
-  margin-top: 1rem;
 }
 
 .download-btn:hover {
@@ -308,7 +326,8 @@ body {
   padding: 2.5rem;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  text-align: center;
   transition: transform 0.3s ease;
 }
 .feature-card:hover { transform: translateY(-5px); }
@@ -334,8 +353,16 @@ body {
   border: 1px solid rgba(167, 139, 250, 0.2);
 }
 
+.encryption-banner {
+  width: 100%;
+  margin-top: 2rem;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .encryption-badge {
-  margin-top: 1.5rem;
   background: rgba(16, 185, 129, 0.1);
   color: #10B981;
   padding: 0.75rem 1.25rem;
@@ -349,6 +376,39 @@ body {
 }
 .encryption-badge::before {
   content: '🔒';
+}
+
+/* Developer Section */
+.developer-section {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto 4rem auto;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.dev-title {
+  color: var(--accent-blue);
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 0 0 1rem 0;
+}
+.dev-desc {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin: 0 0 1.5rem 0;
+}
+.dev-desc strong {
+  color: var(--text-main);
+  font-size: 1.2rem;
+}
+.dev-links {
+  display: flex;
+  gap: 1.5rem;
 }
 
 /* Footer */
