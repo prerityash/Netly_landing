@@ -56,49 +56,60 @@ function App() {
         <div className="alert-icon">⚠️</div>
         <div className="alert-content">
           <h3 className="alert-title">Important Note</h3>
-          <p className="alert-text">When you connect to the network, your phone might show an annoying browser pop-up to sign in. <strong>Please close that pop-up window immediately</strong>, return to the Netly app, and tap Connect. We'll bypass it for you!</p>
+          <p className="alert-text">When you connect to the network, your phone might show an annoying browser pop-up to sign in. just Close that pop-up window and return to the netly app, and tap Connect. We'll bypass it for you!</p>
         </div>
       </div>
 
-      {/* Modular Zigzag Sections */}
-      <div className="modular-container">
-
-        {/* Step 1 - Image Left, Content Right */}
-        <section className="modular-section">
-          <div className="modular-image-container">
-            <img src="/mod1.jpg" alt="Step 1: Scan Networks" className="modular-img floating-1" />
+      {/* Main Content Area */}
+      <div className="content-container">
+        
+        {/* Steps & Image Section */}
+        <section className="steps-section">
+          <div className="steps-content">
+            <h2 className="section-title">3 steps to connect:</h2>
+            <ol className="steps-list">
+              <li><span>1.</span> save your credentials</li>
+              <li><span>2.</span> locate the wifi you want to connect</li>
+              <li><span>3.</span> return to app dashboard and hit connect</li>
+            </ol>
           </div>
-          <div className="modular-content">
-            <div className="step-badge">Module 01</div>
-            <h2 className="step-title">Scan the Network</h2>
-            <p className="step-desc">Launch Netly and instantly scan for available organizational Wi-Fi networks around you in real-time.</p>
-          </div>
-        </section>
-
-        {/* Step 2 - Content Left, Image Right (Achieved via .reverse class) */}
-        <section className="modular-section reverse">
-          <div className="modular-image-container">
-            <img src="/mod2.jpg" alt="Step 2: Add Credentials" className="modular-img floating-2" />
-          </div>
-          <div className="modular-content">
-            <div className="step-badge">Module 02</div>
-            <h2 className="step-title">Save Multiple Credentials</h2>
-            <p className="step-desc">Navigate to the Accounts section and securely vault your captive portal credentials directly on your device. You can borrow one from your friends too!</p>
+          <div className="steps-image">
+            <img src="/mod3.jpg" alt="Netly App Showcase" className="app-preview-img floating" />
           </div>
         </section>
 
-        {/* Step 3 - Image Left, Content Right */}
-        <section className="modular-section">
-          <div className="modular-image-container">
-            <img src="/mod3.jpg" alt="Step 3: Automate Connections" className="modular-img floating-3" />
-          </div>
-          <div className="modular-content">
-            <div className="step-badge">Module 03</div>
-            <h2 className="step-title">Connect within a sec</h2>
-            <p className="step-desc">Netly autonomously detects the captive portal, injects your credentials, and establishes a blazing fast, secure connection.</p>
+        {/* Features Section */}
+        <section className="features-section">
+          <h2 className="section-title text-center">Why Netly?</h2>
+          <div className="features-grid">
+            <div className="feature-card glass-panel">
+              <div className="feature-icon">🚫</div>
+              <h3 className="feature-title">No App Login Required</h3>
+              <p className="feature-desc">Open the app and start using it instantly. We don't ask you to create an account with us.</p>
+            </div>
+            
+            <div className="feature-card glass-panel">
+              <div className="feature-icon">👥</div>
+              <h3 className="feature-title">Save Multiple IDs</h3>
+              <p className="feature-desc">Can save multiple ID's, you can borrow one from your friends too and switch seamlessly.</p>
+            </div>
+            
+            <div className="feature-card glass-panel">
+              <div className="feature-icon">⚡</div>
+              <h3 className="feature-title">Seamless Connectivity</h3>
+              <p className="feature-desc">Connect within seconds without manually typing your credentials every single time.</p>
+            </div>
+            
+            <div className="feature-card glass-panel highlight-card">
+              <div className="feature-icon">🛡️</div>
+              <h3 className="feature-title">Zero-Knowledge Architecture</h3>
+              <p className="feature-desc">Built on Zero-Knowledge Architecture, meaning we have not used a database to store anything from your side.</p>
+              <div className="encryption-badge">
+                Your credentials are encrypted and vaulted using the Android Keystore System
+              </div>
+            </div>
           </div>
         </section>
-
       </div>
 
       <footer className="footer">
