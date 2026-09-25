@@ -69,9 +69,9 @@ function App() {
           <div className="steps-content">
             <h2 className="section-title">3 steps to connect:</h2>
             <ol className="steps-list">
-              <li><span>1.</span> save your credentials</li>
-              <li><span>2.</span> locate the wifi you want to connect</li>
-              <li><span>3.</span> return to app dashboard and hit connect</li>
+              <li><span>1.</span> Save your credentials in app</li>
+              <li><span>2.</span> Locate the wifi you want to connect</li>
+              <li><span>3.</span> Hit connect</li>
             </ol>
           </div>
           <div className="steps-image">
@@ -108,7 +108,7 @@ function App() {
             </div>
           </div>
           <div className="encryption-badge">
-            Your credentials are encrypted and vaulted using the Android Keystore System
+            Your credentials are encrypted using the Android Keystore System
           </div>
         </section>
       </div>
