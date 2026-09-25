@@ -1,6 +1,6 @@
 {
-  "versionCode": 20,
-  "versionName": "1.0.20-beta",
+  "versionCode": 21,
+  "versionName": "1.0.21-beta",
   "apkUrl": "https://netlycnt.vercel.app/netly-app.apk",
-  "releaseNotes": "Netly v1.0.20-beta Released!\n\n• Fixed incorrect ID/Password bug\n• UI Refinements\n• Faster auto-connect execution"
+  "releaseNotes": "Netly v1.0.21-beta Released!\n\n• Beautiful in-app download progress bar added\n• Auto-installs immediately after download completes"
 }
