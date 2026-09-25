@@ -1,6 +1,6 @@
 {
-  "versionCode": 23,
-  "versionName": "1.0.23-beta",
+  "versionCode": 24,
+  "versionName": "1.0.24-beta",
   "apkUrl": "https://netlycnt.vercel.app/netly-app.apk",
-  "releaseNotes": "Netly v1.0.23-beta Released!\n\n• Fixed package parsing error during auto-install"
+  "releaseNotes": "Netly v1.0.24-beta Released!\n\n• Testing the shiny new auto-updater progress bar\n• You should see a download progress bar here!"
 }
