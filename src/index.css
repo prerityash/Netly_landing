@@ -12,7 +12,7 @@
   --text-main: #FFFFFF;
   --text-muted: #94A3B8;
   --accent-blue: #3B82F6;
-  --nav-bg: rgba(6, 9, 19, 0.8);
+  --nav-bg: rgba(6, 9, 19, 0.5);
 }
 
 .light-theme {
@@ -65,12 +65,12 @@ body {
   padding: 1.5rem 3.5rem;
   width: 90%;
   max-width: 800px;
-  background: var(--nav-bg);
-  backdrop-filter: blur(24px);
-  -webkit-backdrop-filter: blur(24px);
-  border: 1px solid var(--panel-border);
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 9999px;
-  box-shadow: 0 15px 40px -10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
 }
 
 .nav-logo {
@@ -145,6 +145,7 @@ body {
   line-height: 1.6;
   max-width: 700px;
 }
+
 .hero-subtitle.highlight {
   color: var(--text-main);
   font-size: 1.5rem;
@@ -214,19 +215,23 @@ body {
   border-left: 4px solid #F59E0B;
   margin-bottom: 6rem;
 }
+
 .alert-icon {
   font-size: 2rem;
 }
+
 .alert-title {
   margin: 0 0 0.5rem 0;
   color: #FBBF24;
   font-size: 1.25rem;
 }
+
 .alert-text {
   margin: 0;
   color: var(--text-muted);
   line-height: 1.6;
 }
+
 .alert-text strong {
   color: var(--text-main);
 }
@@ -247,7 +252,10 @@ body {
   margin-bottom: 2rem;
   line-height: 1.2;
 }
-.text-center { text-align: center; }
+
+.text-center {
+  text-align: center;
+}
 
 /* Steps Section */
 .steps-section {
@@ -257,9 +265,11 @@ body {
   gap: 4rem;
   width: 100%;
 }
+
 .steps-content {
   flex: 1;
 }
+
 .steps-list {
   list-style: none;
   padding: 0;
@@ -267,6 +277,7 @@ body {
   flex-direction: column;
   gap: 1.5rem;
 }
+
 .steps-list li {
   font-size: 1.25rem;
   color: var(--text-muted);
@@ -278,6 +289,7 @@ body {
   border-radius: 16px;
   border: 1px solid var(--panel-border);
 }
+
 .steps-list li span {
   font-weight: 800;
   color: var(--accent-blue);
@@ -289,15 +301,32 @@ body {
   display: flex;
   justify-content: center;
 }
+
 .app-preview-img {
   width: 100%;
   max-width: 320px;
-  filter: drop-shadow(0 20px 40px rgba(0,0,0,0.4));
+  filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.4));
 }
-.light-theme .app-preview-img { filter: drop-shadow(0 20px 40px rgba(0,0,0,0.1)); }
 
-@keyframes float { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-15px); } }
-.floating { animation: float 6s ease-in-out infinite; }
+.light-theme .app-preview-img {
+  filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.1));
+}
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+.floating {
+  animation: float 6s ease-in-out infinite;
+}
 
 /* Features Grid */
 .features-section {
@@ -306,17 +335,20 @@ body {
   flex-direction: column;
   align-items: center;
 }
+
 .features-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
   width: 100%;
 }
+
 @media (min-width: 768px) {
   .features-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
 .feature-card {
   padding: 2.5rem;
   display: flex;
@@ -325,17 +357,22 @@ body {
   text-align: center;
   transition: transform 0.3s ease;
 }
-.feature-card:hover { transform: translateY(-5px); }
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
 
 .feature-icon {
   font-size: 3rem;
   margin-bottom: 1rem;
 }
+
 .feature-title {
   font-size: 1.5rem;
   font-weight: 700;
   margin: 0 0 1rem 0;
 }
+
 .feature-desc {
   font-size: 1.05rem;
   color: var(--text-muted);
@@ -363,6 +400,7 @@ body {
   gap: 0.5rem;
   max-width: fit-content;
 }
+
 .encryption-badge::before {
   content: '🔒';
 }
@@ -378,6 +416,7 @@ body {
   align-items: center;
   text-align: center;
 }
+
 .dev-title {
   color: var(--accent-blue);
   font-size: 1.2rem;
@@ -385,16 +424,19 @@ body {
   letter-spacing: 2px;
   margin: 0 0 1rem 0;
 }
+
 .dev-desc {
   font-size: 1.1rem;
   color: var(--text-muted);
   line-height: 1.6;
   margin: 0 0 1.5rem 0;
 }
+
 .dev-desc strong {
   color: var(--text-main);
   font-size: 1.2rem;
 }
+
 .dev-links {
   display: flex;
   gap: 1.5rem;
@@ -426,8 +468,15 @@ body {
 
 /* Animations */
 @keyframes fadeUp {
-  from { opacity: 0; transform: translateY(30px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Responsive */
@@ -437,11 +486,11 @@ body {
     text-align: center;
     gap: 3rem;
   }
-  
+
   .hero-title {
     font-size: 2.5rem;
   }
-  
+
   .footer-content {
     flex-direction: column;
     gap: 1rem;
