@@ -41,7 +41,7 @@ function App() {
         <div className="download-wrapper">
           <a href="/netly-app.apk" download="Netly.apk" className="download-btn">
             <span>Download (Android Version)</span>
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M12 16L7 11L8.4 9.55L11 12.15V4H13V12.15L15.6 9.55L17 11L12 16ZM4 20V17H6V18H18V17H20V20H4Z" fill="currentColor" />
             </svg>
           </a>
@@ -107,10 +107,8 @@ function App() {
               <p className="feature-desc">Built on Zero-Knowledge Architecture, meaning we have not used a database to store anything from your side.</p>
             </div>
           </div>
-          <div className="encryption-banner glass-panel">
-            <div className="encryption-badge">
-              Your credentials are encrypted and vaulted using the Android Keystore System
-            </div>
+          <div className="encryption-badge">
+            Your credentials are encrypted and vaulted using the Android Keystore System
           </div>
         </section>
       </div>

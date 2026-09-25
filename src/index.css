@@ -65,17 +65,17 @@ body {
   padding: 1.5rem 3.5rem;
   width: 90%;
   max-width: 800px;
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(30px) saturate(150%);
-  -webkit-backdrop-filter: blur(30px) saturate(150%);
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(6, 9, 19, 0.75);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 9999px;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 .light-theme .navbar {
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.75);
   border: 1px solid rgba(0, 0, 0, 0.1);
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
 }
 
 .nav-logo {
@@ -175,8 +175,8 @@ body {
   color: white;
   border: none;
   border-radius: 9999px;
-  padding: 1.25rem 3rem;
-  font-size: 1.25rem;
+  padding: 0.8rem 1.75rem;
+  font-size: 1.05rem;
   font-weight: 600;
   cursor: pointer;
   text-decoration: none;
@@ -353,26 +353,20 @@ body {
   border: 1px solid rgba(167, 139, 250, 0.2);
 }
 
-.encryption-banner {
-  width: 100%;
-  margin-top: 2rem;
-  padding: 1.5rem;
+.encryption-badge {
+  margin: 3rem auto 0 auto;
+  background: rgba(16, 185, 129, 0.1);
+  color: #10B981;
+  padding: 1rem 1.5rem;
+  border-radius: 999px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: 1px solid rgba(16, 185, 129, 0.2);
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.encryption-badge {
-  background: rgba(16, 185, 129, 0.1);
-  color: #10B981;
-  padding: 0.75rem 1.25rem;
-  border-radius: 999px;
-  font-size: 0.95rem;
-  font-weight: 600;
-  border: 1px solid rgba(16, 185, 129, 0.2);
-  display: inline-flex;
-  align-items: center;
   gap: 0.5rem;
+  max-width: fit-content;
 }
 .encryption-badge::before {
   content: '🔒';
