@@ -2,5 +2,5 @@
   "versionCode": 20,
   "versionName": "1.0.20-beta",
   "apkUrl": "https://netlycnt.vercel.app/netly-app.apk",
-  "releaseNotes": "Netly v1.0.20-beta is here!\n\n• Blazing fast WiFi connect\n• Enhanced auto-updater\n• UI Polish & bug fixes"
+  "releaseNotes": "Netly v1.0.20-beta Released!\n\n• Fixed incorrect ID/Password bug\n• UI Refinements\n• Faster auto-connect execution"
 }
