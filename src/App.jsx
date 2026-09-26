@@ -46,7 +46,7 @@ function App() {
               <path d="M12 16L7 11L8.4 9.55L11 12.15V4H13V12.15L15.6 9.55L17 11L12 16ZM4 20V17H6V18H18V17H20V20H4Z" fill="currentColor" />
             </svg>
           </a>
-          <div className="latest-version-text">Latest Version: v1.0.29-beta</div>
+          <div className="latest-version-text">Latest Version: v1.0.30-beta</div>
         </div>
         <p className="beta-notice">
           Experience the beta version today. We will come back with iOS soon!
