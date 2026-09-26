@@ -1,6 +1,6 @@
 {
-  "versionCode": 27,
-  "versionName": "1.0.27-beta",
+  "versionCode": 28,
+  "versionName": "1.0.28-beta",
   "apkUrl": "https://netlygo.vercel.app/Netly.apk",
-  "releaseNotes": "Netly v1.0.27-beta Released!\n\n• UI Tweaks: Error messages auto-hide automatically without requiring manual dismissal."
+  "releaseNotes": "Bugs fixed, login flow enhanced."
 }
