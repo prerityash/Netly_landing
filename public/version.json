@@ -1,6 +1,6 @@
 {
-  "versionCode": 30,
-  "versionName": "1.0.30-beta",
+  "versionCode": 31,
+  "versionName": "1.0.31-beta",
   "apkUrl": "https://netlygo.vercel.app/Netly.apk",
-  "releaseNotes": "1. Bugs fixed\n2. False-positive errors removed\n3. Connection stability improved\n\nSorry for inconvenience, we are working hard for you!"
+  "releaseNotes": "1. Bugs fixed\n2. False-positive errors removed\n3. Connection stability improved\n4. New Security Tips added\n\nSorry for inconvenience, we are working hard for you!"
 }
