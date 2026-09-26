@@ -1,16 +1,43 @@
-# React + Vite
+# Netly Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+![Netly App Showcase](https://netlygo.vercel.app/app_logo.png)
 
-Currently, two official plugins are available:
+This is the official landing page for **Netly** — a seamless mobile extension to LPU Autoconnect. 
+Netly allows users to bypass the tedious captive portal login screen by securely saving their credentials one time using the Android Keystore System.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+The landing page is built with **React** and **Vite**, featuring a premium glassmorphism UI, a sticky translucent navbar, and mobile-responsive layout.
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- 🎨 **Premium Aesthetic**: Heavy use of glassmorphism, glowing gradients, and dynamic drop shadows.
+- 📱 **Mobile Responsive**: Fully optimized for Android devices with scalable layouts.
+- 📹 **Embedded Demo**: Embedded Google Drive preview showcasing the app in action.
+- 📊 **Analytics**: Integrated Vercel Analytics for tracking custom events like APK downloads.
 
-## Expanding the Oxlint configuration
+## Development Setup
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+To run the landing page locally:
+
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+2. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+3. Build for production:
+   ```bash
+   npm run build
+   ```
+
+## Deployment
+
+This project is configured to automatically deploy to **Vercel** (`netlygo.vercel.app`) upon pushing to the `main` branch.
+
+## Developer
+
+Developed by **Soumya Prerit** (Lovely Professional University).
+
