@@ -80,6 +80,21 @@ function App() {
           </div>
         </section>
 
+        {/* Demo Video Section */}
+        <section className="demo-section">
+          <h2 className="section-title text-center">See it in action</h2>
+          <div className="video-wrapper glass-panel">
+            <iframe 
+              src="https://drive.google.com/file/d/1s4bHWFvdontGOsT_cWHiAG5SIi-EssL0/preview" 
+              width="100%" 
+              height="100%" 
+              allow="autoplay"
+              className="demo-video"
+              title="Netly Demo"
+            ></iframe>
+          </div>
+        </section>
+
         {/* Features Section */}
         <section className="features-section">
           <h2 className="section-title text-center">Why Netly?</h2>
