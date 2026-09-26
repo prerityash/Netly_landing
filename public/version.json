@@ -1,6 +1,6 @@
 {
-  "versionCode": 25,
-  "versionName": "1.0.25-beta",
+  "versionCode": 26,
+  "versionName": "1.0.26-beta",
   "apkUrl": "https://netlygo.vercel.app/Netly.apk",
-  "releaseNotes": "Netly v1.0.25-beta Released!\n\n• Backend infrastructure migrated to netlygo domain"
+  "releaseNotes": "Netly v1.0.26-beta Released!\n\n• Bug Fix: Login failures now correctly display 'Incorrect ID/Password' and require explicit dismissal."
 }
