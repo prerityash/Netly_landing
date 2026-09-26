@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Analytics } from '@vercel/analytics/react'
+import { track } from '@vercel/analytics'
 import './index.css'
 
 function App() {
@@ -39,7 +40,7 @@ function App() {
           Just save your credentials one time and tap connect—we will handle the rest.
         </p>
         <div className="download-wrapper">
-          <a href="/netly-app.apk" download="Netly.apk" className="download-btn">
+          <a href="/netly-app.apk" download="Netly.apk" className="download-btn" onClick={() => track('Download_APK')}>
             <span>Download (Android Version)</span>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M12 16L7 11L8.4 9.55L11 12.15V4H13V12.15L15.6 9.55L17 11L12 16ZM4 20V17H6V18H18V17H20V20H4Z" fill="currentColor" />
