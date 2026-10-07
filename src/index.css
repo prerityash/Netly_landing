@@ -145,8 +145,7 @@ body {
   background-clip: text;
 }
 
-.blink-blue {
-  color: #3b82f6;
+.blink {
   animation: blink 1.2s step-end infinite;
 }
 

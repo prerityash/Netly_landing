@@ -33,7 +33,7 @@ function App() {
 
       {/* Hero Section */}
       <div className="hero-section">
-        <h1 className="hero-title">Hey, did you hear that <span className="text-gradient" style={{ fontSize: '1.3em' }}>Netly</span> is launched<span className="blink-blue">!</span></h1>
+        <h1 className="hero-title">Hey, did you hear that <span className="text-gradient" style={{ fontSize: '1.3em' }}>Netly</span> is launched<span className="text-gradient blink">!</span></h1>
         <h2 className="hero-subtitle highlight">A seamless mobile extension to LPU Autoconnect.</h2>
         <p className="hero-subtitle">
           Fed up entering credentials to the LPU network every time? Now don't worry!
