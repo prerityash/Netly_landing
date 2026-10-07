@@ -66,9 +66,9 @@ body {
   padding: 1.5rem 5%;
   width: 100%;
   max-width: none;
-  background: rgba(6, 9, 19, 0.4);
-  backdrop-filter: blur(120px) saturate(250%);
-  -webkit-backdrop-filter: blur(120px) saturate(250%);
+  background: rgba(6, 9, 19, 0.6);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
   border: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
   border-radius: 0 0 24px 24px;
@@ -145,6 +145,15 @@ body {
   background-clip: text;
 }
 
+.blink-blue {
+  color: #3b82f6;
+  animation: blink 1.2s step-end infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
 .hero-subtitle {
   font-size: 1.25rem;
   color: var(--text-muted);
@@ -168,9 +177,11 @@ body {
 }
 
 .latest-version-text {
-  font-size: 0.9rem;
-  color: var(--text-muted);
-  font-weight: 500;
+  font-size: 0.95rem;
+  color: #4ade80;
+  font-family: monospace;
+  font-weight: 600;
+  margin-top: 0.25rem;
 }
 
 .download-btn {
@@ -178,7 +189,7 @@ body {
   color: white;
   border: none;
   border-radius: 9999px;
-  padding: 0.8rem 1.75rem;
+  padding: 0.6rem 1.75rem;
   font-size: 1.05rem;
   font-weight: 600;
   cursor: pointer;
@@ -188,6 +199,24 @@ body {
   gap: 0.75rem;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.5);
+}
+
+.download-btn-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.download-main {
+  font-size: 1.1rem;
+  line-height: 1.2;
+}
+
+.download-sub {
+  font-size: 0.75rem;
+  opacity: 0.8;
+  font-weight: 500;
 }
 
 .download-btn:hover {
@@ -479,6 +508,45 @@ body {
 .dev-links {
   display: flex;
   gap: 1.5rem;
+}
+
+/* FAQ Section */
+.faq-section {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto 6rem auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.faq-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.faq-item {
+  padding: 1.5rem 2rem;
+  text-align: left;
+}
+
+.faq-question {
+  margin: 0 0 0.75rem 0;
+  font-size: 1.15rem;
+  color: var(--text-main);
+  font-weight: 600;
+}
+
+.faq-answer {
+  margin: 0;
+  color: var(--text-muted);
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.faq-answer strong {
+  color: var(--text-main);
 }
 
 /* Footer */

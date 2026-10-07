@@ -33,7 +33,7 @@ function App() {
 
       {/* Hero Section */}
       <div className="hero-section">
-        <h1 className="hero-title">Hey, did you hear that <span className="text-gradient" style={{ fontSize: '1.3em' }}>Netly</span> is launched!</h1>
+        <h1 className="hero-title">Hey, did you hear that <span className="text-gradient" style={{ fontSize: '1.3em' }}>Netly</span> is launched<span className="blink-blue">!</span></h1>
         <h2 className="hero-subtitle highlight">A seamless mobile extension to LPU Autoconnect.</h2>
         <p className="hero-subtitle">
           Fed up entering credentials to the LPU network every time? Now don't worry!
@@ -41,7 +41,10 @@ function App() {
         </p>
         <div className="download-wrapper">
           <a href="/Netly.apk" download="Netly.apk" className="download-btn" onClick={() => track('Download_APK')}>
-            <span>Download (Android Version)</span>
+            <div className="download-btn-text">
+              <span className="download-main">Download</span>
+              <span className="download-sub">(Android Version)</span>
+            </div>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M12 16L7 11L8.4 9.55L11 12.15V4H13V12.15L15.6 9.55L17 11L12 16ZM4 20V17H6V18H18V17H20V20H4Z" fill="currentColor" />
             </svg>
@@ -125,6 +128,27 @@ function App() {
           </div>
           <div className="encryption-badge">
             Your credentials are encrypted using the Android Keystore System
+          </div>
+        </section>
+
+        {/* FAQ Section */}
+        <section className="faq-section">
+          <h2 className="section-title text-center">Frequently Asked Questions</h2>
+          <div className="faq-container">
+            <div className="faq-item glass-panel">
+              <h3 className="faq-question">Why use this app when I have to enter credentials in both places?</h3>
+              <p className="faq-answer">Netly locally saves your credentials on first use, then injects it every time you hit connect in the background, automatically opening the annoying browser for you and bypassing it.</p>
+            </div>
+
+            <div className="faq-item glass-panel">
+              <h3 className="faq-question">Showing disconnected every time in dashboard?</h3>
+              <p className="faq-answer">Open the network panel from mobile settings or navigate to the network panel in the app and first save the network by credential <strong>123456789a</strong>.</p>
+            </div>
+
+            <div className="faq-item glass-panel">
+              <h3 className="faq-question">Can I connect with multiple IDs or a friend's ID?</h3>
+              <p className="faq-answer">Yes, you can save multiple IDs (your friends' too), activate the ID, and connect across the college network.</p>
+            </div>
           </div>
         </section>
       </div>
